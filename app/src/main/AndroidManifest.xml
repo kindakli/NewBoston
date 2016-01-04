@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="course.examples.newboston" >
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".Splash" android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="application.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Menu" android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="application.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Grafity" android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name=".Email" android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name=".Send" android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name=".Receive" android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name=".UsingCamera" android:label="Camera wallpaper"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
